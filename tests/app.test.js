@@ -5,6 +5,6 @@ describe('GET /', () => {
   it('should return a message indicating CI/CD is working', async () => {
     const res = await request(app).get('/');
     expect(res.statusCode).toEqual(200);
-    expect(res.body).toHaveProperty('message', 'CI/CD Working!');
+    expect(res.body).toHaveProperty('message', 'Full CI/CD Pipeline Working!');
   });
 });
